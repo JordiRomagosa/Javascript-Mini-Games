@@ -1,0 +1,42 @@
+#playground{ 
+  background: #000;
+  width: 400px; height: 200px; 
+  position: relative;  /* per marcar la coordenada (0,0) */
+} 
+.ball { 
+  background-image:url(../imatges/pilota.png); 
+  position: absolute;        /* per poder-la moure amb el programa */
+  width: 14px; height: 14px; border-radius: 7px;  /* és un cercle*/
+  left: 150px;  top: 100px;  /* posició de la bola */
+  display:none;
+} 
+.paddle { 
+  background: #000; 
+  position: absolute;        /* per poder-la moure amb el programa */
+  width: 8px; height: 70px; /* és un rectangle */
+  left: 50px; top: 70px;     /* posició de la raqueta */
+  border-radius: 4px;
+} 
+#paddleB { left: 340px; background-image:url(../imatges/paladreta.png); } 
+#paddleA {background-image:url(../imatges/palaesquerra.png);}
+
+#start {
+	position: relative;
+	color: #FFF;
+	top: 75px;
+	text-align: center;
+	font-size: 50px;
+	display: none;
+	font-family: "Lucida Console", Monaco, monospace;
+}
+.score {
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 20px;
+}
+.title {
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 50px;
+}
+.void {
+	height: 50px;
+}

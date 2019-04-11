@@ -1,0 +1,53 @@
+Pràctica Desenredar la Xarxa
+
+Jordi Mellado Romagosa
+
+
+En el joc de desenredar la xarxa, primer apareix un menú que permet triar, amb els botons, el que es vol fer.
+A dalt de tot, apareix un quadre de text on permet entrar el nom del jugador (és el que sortirà en el ranking
+si es realitza un rècord).
+
+Si s'apreta "Jugar", surt un altre menú on deixa triar el mode de joc; si s'apreta "Ranking", ensenya el ranking actual;
+i si s'apreta opcions, apareixen dos botons que permeten esborrar la partida guardada i resetejar el ranquing.
+
+Els modes de joc són tres: normal, contrarrellotge i infinit.
+
+1-Normal:
+	
+	El jugador comença pel nivell 0 i va avançant nivells fins que es cansa i deixa de jugar.
+
+2-Contrarrellotge
+
+	El jugador comença pel nivell 0 i va avançant nivells fins que s'acaba el temps (un total de 5 minuts).
+	Quan s'acaba el temps, anuncia si s'ha aconseguit un rècord o no; i es guarda el resultat al ranking.
+	El nom amb el què es guarda és el mateix que el jugador pot escriure al menú principal.
+
+3-Infinit:
+
+	El jugador comença pel nivell 0 i va avançant nivells. Al acabar cada nivell, el joc es guarda, de manera que
+	si es tanca i torna a iniciar el joc, sempre començarà pel nivell en el que es trobava abans de tancar.
+
+	El jugador també pot guardar quan vulgui el nivell i tornar-lo a carregar en el mateix punt en el que l'ha
+	guardat sense necessitat de sortir del joc (per exemple per provar uns moviments i retornar a on estava abans).
+
+
+Problemes:
+
+	He tingut dos problemes importants en el desenvolupament del joc: el tall entre diferents segments i el guardat.
+	
+	El tall entre diferents segments perquè al principi no ho detectava correctament, i després detectava com a que
+	es tallaven les rectes que s'ajuntaven en el mateix punt. Ara ja funciona correctament, però a vegades encara
+	detecta que no es tallen quan la recta s'acosta molt al punt d'on surt la segona recta.
+
+	El guardat perquè al principi no sabia que al recuperar les dades, els cercles, punts, etc., es recuperaven en 
+	forma d'objectes i no permetia que s'utilitzessin els mètodes de les classes. Ho vaig arreglar reconvertint
+	els objectes a la classe corresponent.
+	
+	Encara hi ha un problema amb el guardat, i és que en el mode infinit no es guarda automàticament al passar de
+	nivell fins que s'ha donat un clic al botó de "guardar" dins del joc. (Només cal la primera vegada que s'obre
+	el mode de joc infinit o quan s'esborra la partida guardada)
+
+Medalles:
+
+	El millor del meu joc és que permet els tres diferents modes de joc, i també que permet resetejar el ranking
+	i esborrar la partida guardada.

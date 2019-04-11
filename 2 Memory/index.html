@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="cat">
+<head>
+  <meta charset="utf-8">
+  <title>Joc de recordar posicions</title>
+  <link rel="stylesheet" href="css/estils.css" />
+</head>
+<body>
+ <div align="center">
+ <header><h1>Memory game</h1></header>		 <!-- canviar el titol i com es veu -->
+ <div id="menu">Menu
+ 	<div class="menuOption">Number of players:
+        <div class="menuRadio"> <input type="radio" name="players" id="1Player" checked onClick="numberOfPlayers(1)">1 Player</div>
+        <div class="menuRadio"> <input type="radio" name="players" id="2Player" onClick="numberOfPlayers(2)">2 Player</div>
+	</div>
+    <div id="cardMenu">
+    	<div class="menuOption">Card Set:
+        	<div class="menuRadio"><input type="radio" name="cardSet" id="onePiece" checked onClick="selectCardSet(1)">One Piece</div>
+            <div class="menuRadio"><input type="radio" name="cardSet"id="mariobros" onClick="selectCardSet(2)">Mario Bros.</div>
+            <!-- afegir més cardsets? -->
+        </div>
+        <div class="menuOption">Card Number: <input type="number" id="cardNumber" value="16" min="12" max="36" step="2">
+        </div>
+    </div>
+    <div class="menuRadio"><input type="checkbox" id="extremeMode" onClick="extremeClick()">Extreme Mode (only on 2 Player)</div>
+    
+    <input type="button" id="startButton" value="Start Game" onClick="start()">
+ </div>
+ 
+ <section id="marcadors">
+    	<div id="jugador1"> <label >Jugador 1</label>
+        	<div class="puntuacio"><label >Punts: </label>
+            	<div id="punts1">0
+                </div>
+            </div>
+            <div id="intents"><label >Intents: </label>0
+            </div>
+        </div>
+        <div id="jugador2"> <label >Jugador 2</label>
+        	<div class="puntuacio"><label >Punts: </label>
+           		<div id="punts2">0
+                </div>
+            </div>
+        </div>
+        <div id="torn">
+        </div>
+    </section>
+ <section id="joc">
+  	<div id="cartes">
+        <div class="carta">
+            <div class="cara davant"></div>
+            <div class="cara darrera"></div>
+        </div>  
+   	</div> <!-- #cartes --> 
+  </section> <!-- #joc --> 
+ </div>
+<script src="js/jquery-1.11.2.min.js"></script> 
+<script src="js/jocMemoria.js"></script> 
+</body> 
+</html> 

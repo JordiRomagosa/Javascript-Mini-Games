@@ -1,0 +1,120 @@
+#menu {
+	position: relative;
+	background: #FFF;
+	border: 2px solid #000;
+	border-radius: 25px;
+	width: 400px;
+	padding: 10px;
+	font-size:32px;
+	display:none;
+}
+.menuOption{
+	position:relative;
+	text-align:left;
+	left:20px;
+	font-size:18px;
+}
+.menuRadio{
+	position: relative;
+	left: 20px;
+	font-size:16px;
+}
+
+
+#joc {
+	background: #9c9;
+	padding: 5px;
+	width: 500px; height: 460px;
+	border-radius: 10px;
+	border: 1px solid #666;
+	margin: 0 auto;	
+	
+	display: -moz-box;
+	-moz-box-pack: center;
+	-moz-box-align: center;	
+}
+#cartes {
+	position: relative;	
+	width: 380px; height: 400px;  /* mida del conjunt de cartes del joc */
+	top: 30px;
+	left: 30px;
+}
+.carta {	
+	position: absolute;
+	width: 80px; height: 120px;
+	
+	perspective: 600px;
+}
+.cara {
+	position: absolute;
+	width: 80px; height: 120px;
+	border-radius: 10px;
+
+	transition: all .3s;
+}
+.darrera {
+	background: #966 url(../css/img/onepiecebaralla.png) -240px -360px;
+	z-index: 10;  /* portem al davant */
+}
+.davant {
+	background: #efefef url(../css/img/onepiecebaralla.png);
+	transform: rotate3d(0,1,0,-180deg);
+	z-index: 8; /* portem al darrera */
+}
+.carta1 {background-position: 0px 0px;}
+.carta2 {background-position: -80px 0px;}
+.carta3 {background-position: -160px 0px;}
+.carta4 {background-position: -240px 0px;}
+.carta5 {background-position: -320px 0px;}
+.carta6 {background-position: 0px -120px;}
+.carta7 {background-position: -80px -120px;}
+.carta8 {background-position: -160px -120px;}
+.carta9 {background-position: -240px -120px;}
+.carta10 {background-position: -320px -120px;}
+.carta11 {background-position: 0px -240px;}
+.carta12 {background-position: -80px -240px;}
+.carta13 {background-position: -160px -240px;}
+.carta14 {background-position: -240px -240px;}
+.carta15 {background-position: -320px -240px;}
+.carta16 {background-position: 0px -360px;}
+.carta17 {background-position: -80px -360px;}
+.carta18 {background-position: -160px -360px;}
+.bomba {background-position: -320px -360px;}
+
+.carta-girada .darrera { /* elements que tinguin les dues classes aplicades */
+	transform: rotate3d(0,1,0,180deg);
+	z-index: 8; /* portem al darrera */
+}
+.carta-girada .davant { /* elements que tinguin les dues classes aplicades */
+	transform: rotate3d(0,1,0,0deg);
+	z-index: 10;  /* portem al davant */
+}
+.carta-esborrada {display: none;}
+
+#marcadors {
+	display: none;
+	position: relative;
+	height: 80px;
+	top: 10px;
+	font-family: "Lucida Console", Monaco, monospace;
+}
+#torn {
+	float:center;
+	font-size: 18px;
+}
+#jugador1 {
+	float:right;
+	font-size: 20px;
+}
+#jugador2 {
+	float:left;
+	font-size: 20px;
+	display:none;
+}
+.puntuacio {
+	font-size: 18px;
+	display:none;
+}
+#intents{
+	font-size: 18px;
+}

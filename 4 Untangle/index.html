@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Desenreda la xarxa</title>
+    <link rel="stylesheet" href="css/estils.css" />
+</head>
+
+<body>
+
+<div id="menu">
+	<div id="menuPrincipal" class="menu">Menu Principal
+    	<div align="center" id="nomJugador">
+        	<label>Nom del Jugador:</label><input type="text" id="text" size="10" maxlength="10" value="Jugador">
+            <div id="jugar" class="button">Jugar</div>
+            <div id="veureRanking" class="button">Ranking</div>
+            <div id="opcions" class="button">Opcions</div>
+        </div>
+    </div>
+    <div id="menuJugar" class="menu">Jugar
+        <div align="center">
+            <div id="normal" class="button">Normal</div>
+            <div id="competitiu" class="button">Contrarrellotge</div>
+            <div id="infinit" class="button">Infinit</div>
+      	</div>
+   	</div>
+    <div id="menuOpcions" class="menu">Opcions
+    	<div align="center">
+            <div id="resetPartida" class="button">Borrar Partida Guardada</div>
+            <div id="resetPuntuacions" class="button">Resetejar Ranking</div>
+      	</div>
+    </div>
+    <div align="center">
+    	<div id="rankingMenu" class="menu">Ranking
+            <div id="ranking1" class="ranking">
+          	</div>
+            <div id="ranking2" class="ranking">
+          	</div>
+            <div id="ranking3" class="ranking">
+          	</div>
+            <div id="ranking4" class="ranking">
+          	</div>
+            <div id="ranking5" class="ranking">
+          	</div>
+        </div>
+    </div>
+    <div align="center">
+    	<div id="avisos" class="button">
+        </div>
+    </div>
+    <div align="center">
+        <div id="tornarMenu" class="button">Torna al menu</div>
+    </div>
+</div>
+
+<div id="joc">
+	<div id="infiniteButtons">
+    	<div id="saveButton" class="button">Guarda la Partida</div>
+        <div id="uploadButton" class="button">Carrega la Partida</div>
+        <div id="time" class="button"></div>
+        <div id="tornarAlMenu" class="button">Torna al menu</div>
+    </div>
+  <canvas id="canvas" width="800" height="400" align="center">
+		El teu navegador no disposa de l'element HTML5 canvas.
+	</canvas>
+    <div id="estat">
+    </div>
+</div>
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/jocpunts.js"></script>
+
+</body>
+</html>

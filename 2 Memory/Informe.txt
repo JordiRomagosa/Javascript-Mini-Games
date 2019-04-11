@@ -1,0 +1,48 @@
+Pràctica del joc de Memory
+
+(Jordi Mellado)
+
+
+
+En el joc que he fet, hi ha tres modes de joc: un jugador, dos jugadors i dos jugadors extrem. Abans d'iniciar el joc,
+hi ha un menú que permet triar el mode de joc, el número de cartes amb què es vol jugar i que permet cambiar les imatges
+que tenen les cartes entre dues baralles diferents. Quan es clicka a "Start" es canvia al tauler de joc i es comença
+a jugar.
+
+1-Un jugador:
+	
+	El típic joc del Memory. El jugador ha d'emparellar les cartes amb el mínim d'intents possible.
+	Quan les emparella totes, hi ha un missatge que avisa que s'ha acabat i anuncia quants intents s'han realitzat.
+
+2-Dos jugadors:
+
+	El joc del Memory, però hi ha dos jugadors que alternen torns. Els marcadors diuen quants punts té cada jugador;
+	i quan es realitza una parella, incrementa els punts del jugador que l'ha fet.
+	Al final del joc, surt una finestra que anuncia el guanyador, o si és un empat.
+
+3-Dos jugadors extrem:
+
+	És semblant al mode de dos jugadors, però sempre es comença amb el màxim de cartes amb dues extra afegides
+	(que són bombes). Quan un jugador fa click en una bomba, se li resta un punt i es canvia el torn. A més,
+	les bombes es barrejen cada vegada que en surt una, de manera que mai es pot saber on estaran. Al final, quan
+	només quedin les dues bombes, surt una finestra que diu quin jugador ha guanyat.
+
+
+Problemes al fer el joc:
+
+	El principal problema amb que m'he trobat ha estat en poder canviar de baralla, perquè a tots els llocs on 
+	havia vist com cambiar la imatge de fons amb jQuery ho posava de manera incorrecta i al carregar el joc no
+	sortia cap imatge, les cartes eren invisibles. Al final vaig anar provant diferents maneres de posar la 
+	url fins que em va sortir bé.
+
+	Una altre cosa que em va donar algun problema va ser aconseguir que detectés correctament els clicks (només girar
+	dues cartes i no tornar a girar la mateixa) i que detectés correctament les parelles.
+
+Medalles:
+
+	Crec que el millor del meu Memory és que et permet triar entre tres modes de joc, el número de cartes amb les 
+	quals jugar i el fet de poder canviar de baralla.
+
+	Les dues baralles estan fetes per mi, vaig anar buscant per internet les imatges i després, amb fotoshop, en
+	vaig anar adaptant les dimensions i la proporció per tal de poder crear a continuació l'sprite amb totes
+	les imatges.

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Laberint</title>
+    <link rel="stylesheet" href="css/estils.css" />
+</head>
+<body>
+<div id="joc" align="center"><h1>Maze<h1>
+    <div id="menu" align="center">
+    	
+        <div id="size">Maze Size
+        	<div>
+        	<input type="radio" name="mazeSize" id="small" checked onClick="changeSize(0)">Small
+            </div>
+            <div>
+        	<input type="radio" name="mazeSize" id="medium" onClick="changeSize(1)">Medium
+            </div>
+            <div>
+        	<input type="radio" name="mazeSize" id="large" onClick="changeSize(2)">Large
+            </div>
+        </div>
+        <div id="mode">Game Mode
+        	<div>
+        	<input type="radio" name="gameMode" id="normal" checked onClick="gameMode(1)">Normal
+            </div>
+            <div>
+        	<input type="radio" name="gameMode" id="auto" onClick="gameMode(2)">Automatic
+            </div>
+            <div>
+        	<input type="radio" name="gameMode" id="ia" onClick="gameMode(3)">I.A.
+            </div>
+        </div>
+        <div id="time">Seconds to end the maze
+        	<input type="number" id="timeValue" value="360" min="60" max="1200" step="1">
+        </div>
+        <div id="start">
+        	<input type="button" id="startButton" value="Start Game" onClick="start()">
+        </div>
+        
+    </div>
+    <div id="canvasContainer">
+    	<div id="temporizer"></div>
+        <canvas id="canvas"></canvas>
+    </div>
+</div>
+<script src="js/jquery-1.11.2.min.js"></script> 
+<script src="js/laberint.js"></script> 
+
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+Pràctica del Laberint
+
+Jordi Mellado Romagosa
+
+
+
+En el joc, hi ha tres mides de laberint diferents, tres modes de joc, i el temps que es vol utilitzar per
+acabar el laberint; que es poden triar pel menú.
+Les tres mides són: petit, mitjà i gran, i cadascuna té deu laberints diferents. Per tant, en total hi ha 30 laberints.
+Els tres modes de joc són: normal, automàtic i IA.
+Quan es clicka el botó "Start Game" el laberint es carrega i comença el joc. Si es torna a apretar abans que el joc acabi,
+es carrega un nou laberint amb les noves opcions de menú (en el cas que s'hagin canviat). Un cop comença el joc, no es pot
+pausar.
+
+1-Normal:
+	
+	El jugador mou el personatge amb les fletxes fins arribar a la fletxa vermella, que indica el final.
+
+2-Automàtic:
+
+	El jugador mou el personatge amb les fletxes, però no cal mantenir-les apretades per tal que el personatge
+	avanci. Si es vol parar el personatge o avançar píxel a píxel, només cal apretar la tecla SHIFT o la tecla SPACE.
+
+3-IA:
+
+	Quan la IA està activada, el jugador no pot fer res (a part de canviar les opcions del menú).
+	En primer lloc, la IA intentarà trobar una paret, i un cop la trobi es començarà a moure normalment. Durant aquest
+	temps, es fàcil que faci moviments extranys o innecessaris (a vegades no funciona i es queda en un bucle infinit).
+	
+	En el moviment normal de la IA, aquesta avançarà sempre amb la tècnica de "la mà dreta sempre ha de tocar la paret".
+	Per poder realitzar aquesta tècnica, sempre s'intentarà moure cap a la dreta de la direcciço en la que va
+	actualment. Si veu que pot, canviarà la direcció i anirà cap a la dreta; però si no pot, seguirà recte.
+	Quan arriba a un lloc on no pot avançar cap endavant (i ja haurà vist primer que a la dreta hi ha paret),
+	aleshores girarà cap a l'esquerra.
+
+	Ex 1. La IA va cap a dalt i veu que a la dreta no hi ha paret, girarà cap a la dreta i seguirà el curs normal.
+
+	Ex 2. La IA va cap a baix i veu que a l'esquerra (la dreta respecte al sentit que porta) hi ha paret, seguirà
+	endavant fins que trobi paret al davant (a baix). En aquest punt, tirarà cap a la dreta (l'esquerra
+	respecte a la direcció que porta).
+
+Amb el temps que s'indica al menú, es posa en marxa un compte enrere, que indica el temps que queda per resoldre el 
+laberint. Si no es resol amb el temps indicat, el joc acaba i surt un missatge dient que el jugador ha perdut la partida.
+
+En solucionar el laberint, surt un missatge que anuncia la victòria i es queda el laberint bloquejat fins que es torna a
+iniciar una altre partida amb el botó "Start Game".
+
+CARACTERISTICA SECRETA: només des del codi es pot canviar l'icono del personatge. N'hi ha quatre de diferents:
+	personatge1, personatge2, personatge3 i personatge4. (s'ha de canviar el la direcció del link)
+
+Problemes:
+
+	El principal problema ha estat la IA, perquè era incapaç de trobar la primera paret i moure's correctament després
+	(tot i que no donava problemes si començava ja en contacte amb la paret). De fet, encara segueix fent coses extranyes.
+	
+	Els altres problemes han sigut menys problemàtics. Alguns han estat: que dibuixés correctament el laberint
+	i el personatge (a vegades el personatge quedava sota i no es veia), els xocs amb les parets (perquè al principi
+	no tenia en compte tots els pixels del personatge, només els dels extrems) i el control de les tecles al canviar
+	de mode.
+
+Medalles:
+
+	El millor del meu joc és la IA, encara que no et permet jugar mentre està activa.
+
+	Tots els laberints estan editats per mi: hi he posat les fletxes d'entrada i de sortida i he apuntat la posició
+	en la que ha d'aparèixer el personatge (en el codi). Els personatges també els he dibuixat jo.

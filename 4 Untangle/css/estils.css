@@ -1,0 +1,66 @@
+#menu{
+	text-align:center;
+	display:none;
+	position: relative;
+}
+#joc{
+	text-align:center;
+	display:none;
+}
+#canvas{
+	position:relative;
+	background: #333;
+}
+#infiniteButtons{
+	position:absolute;
+}
+.button{
+	border-radius: 10px;
+	border: 1px solid #0FF;
+	background: #00F;
+	width: 300px;
+	height: 40px;
+	padding: 10px;
+	text-align: center;
+	font-size:24px;
+	font-family:"Comic Sans MS", cursive;
+	color: #0FF;
+}
+.menu{
+	position:relative;
+	font-size:30px;
+	font-family:"Comic Sans MS", cursive;
+	color: #00F;
+	text-align:center;
+	display:none;
+}
+#tornarMenu {
+	display:none;
+}
+#rankingMenu{
+	width: 500px;
+	padding: 20px;
+	font-size:24px;
+	font-family:"Comic Sans MS", cursive;
+	color: #0FF;
+	background: #00F;
+	border-radius: 20px;
+	border: 1px solid #0FF;
+}
+#avisos {
+	position: absolute;
+	left: 500px;
+	top: 50px;
+	width:330px;
+	height:100px;
+	display: none;
+}
+#time{
+	display:none;
+}
+.ranking {
+	display: block;
+}
+#nomJugador{
+	font-size:20px;
+}

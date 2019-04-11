@@ -1,0 +1,52 @@
+#pantalla {
+	position:relative;
+	width:490px;
+	height:630px;
+}
+#fons {
+	position:absolute;
+	z-index:0;
+}
+#inici {
+	position::absolute;
+	z-index:1;
+}
+#final {
+	position::absolute;
+	z-index:1;
+}
+#joc {
+	position:relative;
+	left:120px;
+	top:120px;
+}
+#peces {
+	position:relative;
+	left:10px;
+	top:120px;
+}
+#puntuacions {
+	position:absolute;
+	left:380px;
+	top:340px;
+}
+#taulell {
+	position:absolute;
+	z-index:1;
+}
+#bloc {
+	position:absolute;
+	z-index:2;
+}
+#guardat {
+	position:absolute;
+}
+#seguent1 {
+	position:absolute;
+	left:380px;
+}
+#seguent2 {
+	position:absolute;
+	left:380px;
+	top:110px;
+}

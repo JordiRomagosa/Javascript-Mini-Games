@@ -1,0 +1,20 @@
+#canvasContainer{
+	text-align:center;
+	display:none;
+}
+#menu{
+	display:none;
+	background: #FFF;
+	border: 2px solid #000;
+	border-radius: 25px;
+	width: 200px;
+	padding: 20px;
+	font-size:16px;
+	text-align:center;
+}
+#size{
+	float:left;
+}
+#mode{
+	float:right;
+}
